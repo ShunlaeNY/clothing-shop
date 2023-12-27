@@ -1,0 +1,28 @@
+.section2{
+    padding: 70px 0px;
+}
+.section2 .flex_row{
+    justify-content: center;
+    text-align: center;
+}
+.section2 .flex_row .flex_col .check_mark >img{
+    max-width: 100px;
+    max-height: 100px;
+}
+.section2 .flex_row .flex_col .truck >img{
+    max-width: 50px;
+    max-height: 50px;
+    padding-right: 10px;
+}
+@media (min-width:320px) and (max-width:767px){
+    .section2 .flex_row .flex_col .truck{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section2 .flex_row .flex_col .truck >img{
+        max-width: 80px;
+        max-height: 80px;
+    }
+}

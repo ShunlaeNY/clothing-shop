@@ -1,0 +1,81 @@
+.section1 .navigation .nav_bar .contact{
+    font-weight: bold;
+}
+.contact_session{
+    margin: 30px 100px;
+    gap: 50px;
+    grid-template-columns: repeat(2,1fr);
+}
+.contact_session .left{
+    padding-top: 100px;
+    padding-right:50px;
+    line-height: 30px;
+}
+.contact_session .left div{
+    font-size: 25px;
+}
+.contact_session .left .flex_col .flex_row{
+    gap: 20px;
+}
+.contact_session .left .social_icon{
+    gap: 50px;
+    justify-content: center;
+    padding: 50px 0px;
+}
+.contact_session .left .social_icon > img{
+    max-width: 40px;
+    max-height: 40px;
+}
+.contact_session .right h1{
+    font-size: 40px;
+    text-align: center;
+}
+.contact_session .right form input,.contact_session .right form textarea
+{
+    width: 100%;
+    font-size: 20px;
+    padding-left: 30px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--fourth_color);
+}
+.contact_session .right form input{
+    height: 50px;
+}
+
+@media (min-width:768px) and (max-width:1000px)
+{
+    .contact_session{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .contact_session .right,.contact_session .left{
+        align-self: center;
+        justify-content: center;
+        width: 600px;
+        padding-top: 0px;
+    }
+}
+@media (min-width:320px) and (max-width:767px)
+{
+    .contact_session{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .contact_session .right,.contact_session .left{
+        align-self: center;
+        justify-content: center;
+        width: 200px;
+        padding-top: 0px;
+    }
+    .contact_session .left div{
+        font-size: 16px;
+    }
+    .contact_session .left >h2,    .contact_session .right >h1        {
+        font-size: 25px;
+    }
+    .contact_session .right form input,.contact_session .right form textarea{
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,84 @@
+.add_to_cart_icon span{
+    margin: 0;
+    background-color: red;
+    color: var(--third-color);
+    padding: 0px 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+}
+.add_to_cart_icon{
+    /* padding-right: 0px; */
+    position: relative;
+    transition: all 0.5s;   
+}
+.shopping_cart_box{
+    display: none;
+    width: 30%;
+    height: 100vh;
+    padding: 20px 30px;
+    background-color: var(--third-color);
+    border: 1px solid var(--primary-color);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    transition: all 0.5s;
+    /* animation:moveFromRight ease-in; */
+
+}
+.shopping_cart_box .flex_row{
+    align-items: start;
+    justify-content: space-between;
+}
+.shopping_cart_box .flex_row h1{
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.shopping_cart_box .flex_row i{
+    padding-top: 15px;
+    font-size: 20px;
+}
+.shopping_cart_box .tee1_pick{
+    height: 180px;
+    align-items: flex-start;
+    gap: 10px;
+    display: none;
+    /* background-color: red; */
+}
+.shopping_cart_box .tee1_pick .img img{
+    height: 180px;
+}
+.shopping_cart_box .tee1_pick .img,.shopping_cart_box .tee1_pick .pick_detail{
+    flex: 1;
+}
+.shopping_cart_box .tee1_pick .pick_detail > p:first-child{
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+}
+.shopping_cart_box .tee1_pick .pick_detail .flex_row .add_or_remove_quantity{
+    grid-template-columns: repeat(3,1fr);
+    background-color: var(--secondary-color);
+    border:2px solid gray;
+    cursor: pointer;
+}
+.shopping_cart_box .tee1_pick .pick_detail .flex_row .add_or_remove_quantity div{
+    padding: 5px 10px;
+}
+.shopping_cart_box .tee1_pick .pick_detail .flex_row .remove_button:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: var(--button_blue_color);
+}
+.shopping_cart_box .checkout_button{
+    position: absolute;
+    bottom: 10px;
+    width: 80%;
+    text-align: center;
+    color: var(--third-color);
+}
+.shopping_cart_box .checkout_button:hover{
+    color: var(--button_blue_color);
+}

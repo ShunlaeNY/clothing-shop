@@ -1,0 +1,99 @@
+body{
+    background-color: var(--fifth-color);
+}
+.section1{
+    background-color: var(--fifth-color) !important;
+
+}
+.input{
+    background-color: var(--third-color);
+    height: 50px;
+    font-size: 16px;
+    padding-left: 30px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    border: none;
+}
+.intro_session{
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.filter .link a:last-child{
+    font-weight: bold;
+}
+.filter .link a:last-child:hover{
+    text-decoration: underline;
+}
+.filter{
+    margin: 20px 100px;
+}
+.filter .flex_row{
+    justify-content: space-between;
+    gap: 30px;
+    align-items: baseline;
+}
+.filter .search{
+    position: relative;
+}
+.filter .search input{
+    width: 500px;
+}
+.filter .search > i{
+    position: absolute;
+    right: 20px;
+    top: 25px;
+}
+.filter .flex_row .icon >img{
+    max-width: 30px;
+    max-height: 30px;
+    cursor: pointer;
+}
+.filter .flex_row .icon >i{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media (max-width:1100px) and (min-width:768px)
+{
+    .filter .flex_row{
+        flex-direction: column;
+        gap: 0px;
+    }
+    .filter .flex_row .sort_by{
+        flex-direction: row;
+        gap: 20px;
+    }
+    .filter .flex_row .sort_by .icon{
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+
+@media (max-width:767px) and (min-width:320px)
+{
+    .filter{
+        margin: 20px 30px;
+    }
+    .filter .search input{
+        max-width: 220px;
+    }
+    .filter .flex_row{
+        flex-direction: column;
+        gap: 0px;
+    }
+    .filter .flex_row .sort_by{
+        flex-direction: column;
+        gap: 0px;
+    }
+    .filter .flex_row .sort_by .icon{
+        flex-direction: row;
+        gap: 20px;
+    }
+}

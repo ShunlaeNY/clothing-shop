@@ -1,0 +1,103 @@
+.section1 .navigation .nav_bar .about_us{
+    font-weight: bold;
+}
+.intro{
+    background-image: url(/images/arrangement-different-traveling-elements\ 1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--third-color);
+}
+.body{
+    height: 800px;
+    text-align: center;
+    justify-content: center;
+}
+.body .flex_col{
+    max-width: 800px;
+    line-height: 40px;
+    justify-content: center;
+}
+.body .flex_col >img{
+    height: 70%;
+    width: 100%;
+}
+.body .flex_col>h1{
+    margin: 0px;
+    padding: 0px 0px 50px 0px;
+}
+.body1,.body2,.body3,.body4{
+    padding-top: 50px;
+}
+.body .flex_col >p{
+    font-size: 25px;
+    padding-bottom: 50px;
+}
+.body1,.body3{
+    background-color: var(--secondary-color);
+}
+.body2,.body4{
+    background-color: var(--third-color);
+}
+.body4{
+    margin-bottom: 100px;
+}
+.body1{
+    position: relative;
+}
+.body1 .flex_col{
+    position: absolute;
+    top: 50px;
+}
+/* .body2{
+    position: relative;
+} */
+.body2 .flex_col{
+    position: absolute;
+    top: 97rem;
+}
+.body3 .flex_col{
+    position: absolute;
+    top: 157rem;
+}
+.body4 .flex_col{
+    position: absolute;
+    top: 213rem;
+}
+
+/* responsive */
+/* tablet */
+@media (max-width:1400px) and (min-width:768px)
+{
+    .body .flex_col{
+        max-width: 600px;
+    }
+    .body4{
+        margin-bottom: 200px;
+    }
+}
+/* phone */
+@media (max-width:767px) and (min-width:320px)
+{
+
+    .body1 .flex_col,.body2 .flex_col,.body3 .flex_col,.body4 .flex_col{
+        position: static;
+    }
+    .body .flex_col{
+        padding:0px 50px 0px 50px;
+    }
+    .body .flex_col >p{
+        font-size: 20px;
+        padding-bottom: 30px;
+        margin-bottom: 0px;
+    }
+    .body{
+        height: auto;
+    }
+
+}
